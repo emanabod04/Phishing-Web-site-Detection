@@ -1,2 +1,9 @@
 # Phishing-Web-site-Detection
 project Phishing Web Page Detection Methods
+# Abstract
+Currently, fishing websites are a trap for many clients or even individual users. Basically, they are websites as same as any other website that the user can log in to with sensitive data such as popular banks or Netflix. This problem was addressed by many researchers lately with multiple ways to detect these fishing websites using AI. In this study, different feature extraction methods and machine learning algorithms were used to solve this problem. In addition, we 
+aimed to compare both methods to find the best algorithm to detect fishing websites with time efficiency. The main methods that were used were based on URL features and content features (HTML solved with NLP). Different algorithms were applied in the first method such as Random Forest, bagging, KNN, boosting, stacking, and Voting. 
+The second method was applied after word embedding by GloVe and TF-IDF followed by the following models: LR, RF, NB, SGD, and bi-LSTM. The champion model in the first approach is XgBoost with 94.7% f1-score and SGD with 84% f1-score in the second approach. Therefore, the NLP approach took more time and more complex than the URL approach, however, the URL approach outperformed it.
+# Conclusion
+Phishing websites are easy to create and can be hard to detect by normal users. Different features can be extracted and used with machine learning models to differentiate between legitimate and phishing websites. After comparing different extracted features and machine learning models, the best model using URL features was XGB with a recall of 0.92 and f1-score of 0.95, and the best model using HTML features was SGD with a recall of 0.83 and f1-score of 0.84 for phishing class on the test set. Also, HTML features extraction is a time-consuming process in comparison with URL features and doesn’t help in differentiating legitimate and phishing websites.
+
